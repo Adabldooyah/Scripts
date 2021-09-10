@@ -18,7 +18,7 @@ Press Enter to write to files or enter any character to map more interfaces.\n""
 		iNum += 1
 
 for k, v in nicMap.items():
-	fileObject = open(/etc/systemd/network/"10-"+k+".link","w") #provide full path
+	fileObject = open("/etc/systemd/network/10-"+k+".link","w") #provide full path
 	contents = [
 "[Match]"
 +"\nMACAddress=" + v
