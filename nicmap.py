@@ -20,7 +20,8 @@ Press Enter to write to files or enter any character to map more interfaces.\n""
 for k, v in nicMap.items():
 	fileObject = open(/etc/systemd/network/"10-"+k+".link","w") #provide full path
 	contents = [
-"MACAddress=" + v
+"[Match]"
++"\nMACAddress=" + v
 +"\nDriver=!bridge"
 +"\n\n[Link]"
 +"\nNamePolicy="
