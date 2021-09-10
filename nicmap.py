@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 print("""This program will ask you for the MAC addresses 
-associated with your interfaces, starting with eth0.\n""")
+associated with your interfaces, starting with eth0.
+Press enter with no value to write specified info to files.\n""")
 
 iNum = 0
 nicMap = {}
